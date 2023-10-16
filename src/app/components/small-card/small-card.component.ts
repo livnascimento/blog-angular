@@ -9,6 +9,8 @@ export class SmallCardComponent implements OnInit {
 
   constructor() { }
 
+  imgSource: string = "https://flutter.github.io/assets-for-api-docs/assets/material/Colors.purple.png"
+
   ngOnInit(): void {
   }
 
