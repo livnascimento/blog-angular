@@ -1,4 +1,4 @@
-img {
-  width: 100vw;
-  height: 18vh;
+.card-img {
+  height: 150px;
+  object-fit: cover;
 }
