@@ -12,12 +12,14 @@ export class HomeComponent implements OnInit {
 
   data: any;
 
-  newerImageStyle = {
-    'height': '450px !important'
+  newerStyle = {
+    'height': '450px !important',
+    'font-size': '3rem'
   }
 
-  moreImageStyle = {
-    'height': '300px !important'
+  moreStyle = {
+    'height': '300px !important',
+    'font-size': '2rem !important'
   }
 
   async ngOnInit() {
