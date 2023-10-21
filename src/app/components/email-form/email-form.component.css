@@ -1,0 +1,16 @@
+input {
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #7853cf;
+  border-bottom: 2px solid #7853cf;
+}
+
+button {
+  background-color: #7853cf;
+  border: 1px solid #7853cf;
+}
+
+button:hover {
+  background-color: #51378f;
+  border: 1px solid #51378f;
+}
