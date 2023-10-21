@@ -1,10 +1,13 @@
 <div class="container">
-  <img src="{{imgSource}}" class="card-img rounded">
+  <img src="{{imgSource}}" class="card-img rounded" [style.height]="imageHeight">
   <div class="my-4">
-    <span class="opacity-50">{{type}} // {{subject}} //  {{publicationDate}}</span>
+    <span class="opacity-50">{{type}} // {{subject}} </span>
   </div>
-  <div>
-    <a href=""><h2 class="fs-1 fw-bold">{{title}}</h2></a>
-    <p class="card-text pt-2 fw-normal opacity-75">{{description}}</p>
+  <div class="my-3">
+    <a href=""><h2 class="fw-bold">{{title}}</h2></a>
+    <p class="card-text fw-normal opacity-75 mt-2">{{description}}</p>
+  </div>
+  <div class="mt-3">
+    <small>{{publicationDate}}</small>
   </div>
 </div>

@@ -15,6 +15,7 @@ export class BigCardComponent implements OnInit {
   @Input() publicationDate: string = '';
   @Input() type: string = '';
   @Input() subject: string = '';
+  @Input() imageHeight: string = 'auto';
 
   ngOnInit(): void {
   }

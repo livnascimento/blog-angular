@@ -1,17 +1,27 @@
 <app-menu-bar></app-menu-bar>
 <app-title></app-title>
-<div class="articles row my-4 m-md-5 align-items-stretch">
-  <div class="col-12 col-md-6" *ngIf="data">
-    <app-big-card [imgSource]="data[0].article_cover" [title]="data[0].title" [description]="data[0].description" [publicationDate]="data[0].date" [type]="data[0].type" [subject]="data[0].subject"></app-big-card>
-  </div>
-  <div class="col mt-5 mt-md-0">
-    <div class="row gx-3 justify-content-between align-items-stretch">
-      <div class="col-12 col-md-6" *ngFor="let article of data.slice(0,4)">
-        <app-small-card [imgSource]="article.article_cover" [title]="article.title"></app-small-card>
-      </div>
-      <div class="col-12 col-md-6" *ngFor="let article of data.slice(4,6)">
-        <app-small-card [imgSource]="article.article_cover" [title]="article.title"></app-small-card>
+<div class="articles row my-4 m-md-5 align-items-stretch" *ngIf="data">
+    <div class="col-12 col-md-6">
+      <app-big-card [imgSource]="data[0].article_cover" [title]="data[0].title" [description]="data[0].description" [publicationDate]="data[0].date" [type]="data[0].type" [subject]="data[0].subject" [imageHeight]="'450px'"></app-big-card>
+    </div>
+    <div class="col my-5 mt-md-0">
+      <div class="row gx-3 justify-content-between align-items-stretch">
+        <div class="col-12 col-md-6" *ngFor="let article of data.slice(0,4)">
+          <app-small-card [imgSource]="article.article_cover" [title]="article.title"></app-small-card>
+        </div>
+        <div class="col-12 col-md-6" *ngFor="let article of data.slice(4,6)">
+          <app-small-card [imgSource]="article.article_cover" [title]="article.title"></app-small-card>
+        </div>
       </div>
     </div>
-  </div>
+    <div class="row gx-3 mb-4 m-mb-5 align-items-stretch">
+      <div class="col-12 col-md-6 my-3">
+        <hr class="mb-3 mx-3">
+        <app-big-card [imgSource]="data[6].article_cover" [title]="data[6].title" [description]="data[6].description" [publicationDate]="data[6].date" [type]="data[6].type" [subject]="data[6].subject" [imageHeight]="'300px'"></app-big-card>
+      </div>
+      <div class="col-12 col-md-6 my-3">
+        <hr class="mb-3 mx-3">
+        <app-big-card [imgSource]="data[7].article_cover" [title]="data[7].title" [description]="data[7].description" [publicationDate]="data[7].date" [type]="data[7].type" [subject]="data[7].subject" [imageHeight]="'300px'"></app-big-card>
+      </div>
+    </div>
 </div>

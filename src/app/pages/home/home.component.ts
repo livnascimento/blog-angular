@@ -8,14 +8,23 @@ import axiosInstance from '../../services/axios-config';
 })
 export class HomeComponent implements OnInit {
 
+  constructor() { }
+
   data: any;
 
-  constructor() { }
+  newerImageStyle = {
+    'height': '450px !important'
+  }
+
+  moreImageStyle = {
+    'height': '300px !important'
+  }
 
   async ngOnInit() {
     try {
       const response = await axiosInstance.get('/article');
       this.data = response.data;
+      console.log(this.data);
     } catch (error) {
       console.error('Erro ao obter dados da API:', error);
     }
