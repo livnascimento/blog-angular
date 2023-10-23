@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import axiosInstance from '../../services/axios-config';
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  data: any;
+  id: number = 0;
+
+  async ngOnInit() {
+    this.route.params.subscribe(params => {
+      const id = params['id'];
+      this.id = id;
+    });
+    try {
+      const response = await axiosInstance.get(`/article/${this.id}`);
+      this.data = response.data;
+    } catch (error) {
+      console.error('Erro ao obter dados da API:', error);
+    }
   }
 
 }

@@ -1,1 +1,4 @@
-<p>content works!</p>
+<div class="w-100 px-5" *ngIf="data">
+  <app-article-header [subject]="data.subject" [title]="data.title" [description]="data.description" [imgSource]="data.article_cover"></app-article-header>
+  <app-text-container [text]="data.article_text"></app-text-container>
+</div>
