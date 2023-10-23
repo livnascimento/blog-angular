@@ -19,14 +19,13 @@ export class HomeComponent implements OnInit {
 
   moreStyle = {
     'height': '300px !important',
-    'font-size': '2rem !important'
+    'font-size': '2rem !important',
   }
 
   async ngOnInit() {
     try {
       const response = await axiosInstance.get('/article');
       this.data = response.data;
-      console.log(this.data);
     } catch (error) {
       console.error('Erro ao obter dados da API:', error);
     }

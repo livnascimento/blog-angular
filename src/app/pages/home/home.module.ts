@@ -4,26 +4,26 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home.component';
 
-import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
 import { TitleComponent } from '../../components/title/title.component';
 import { BigCardComponent } from '../../components/big-card/big-card.component';
 import { SmallCardComponent } from '../../components/small-card/small-card.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { EmailFormComponent } from '../../components/email-form/email-form.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    MenuBarComponent,
     TitleComponent,
     BigCardComponent,
     SmallCardComponent,
-    FooterComponent,
-    EmailFormComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [HomeComponent]
