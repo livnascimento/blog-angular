@@ -4,7 +4,7 @@
     <span class="opacity-50">{{type}} // {{subject}} </span>
   </div>
   <div class="my-3">
-    <a href=""><h2 [style.font-size]="fontSize">{{title}}</h2></a>
+    <h2 [style.font-size]="fontSize"><a [routerLink]="['article', id]">{{title}}</a></h2>
     <p class="card-text fw-normal opacity-75 mt-2">{{description}}</p>
   </div>
   <div class="mt-3">

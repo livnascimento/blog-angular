@@ -4,20 +4,29 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContentComponent } from './pages/content/content.component';
 
 import { HomeModule } from './pages/home/home.module';
+import { ContentModule } from './pages/content/content.module';
+import { MenuBarComponent } from './components/menu-bar/menu-bar.component'
+
+import { AboutComponent } from './pages/about/about.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentComponent
+    AboutComponent,
+    PortfolioComponent,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HomeModule
+    HomeModule,
+    ContentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
