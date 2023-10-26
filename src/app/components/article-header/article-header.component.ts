@@ -14,6 +14,9 @@ export class ArticleHeaderComponent implements OnInit {
   @Input() subject: string = '';
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() date: string = '';
+  @Input() cover_credits: string = '';
+  @Input() cover_link: string = '';
 
   ngOnInit(): void { }
 }
