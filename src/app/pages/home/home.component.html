@@ -1,5 +1,5 @@
 <app-title></app-title>
-<div class="articles row my-4 justify-content-center w-100 align-items-stretch mx-0 mx-md-5" *ngIf="data">
+<div class="articles row my-4 justify-content-center w-100 align-items-stretch mx-0 px-md-5" *ngIf="data">
   <div class="col-12 col-md-6" *ngIf="data[0]">
     <app-big-card
     [id]="+data[0].id"
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="row mb-4 mx-0 mx-md-3 w-100">
-    <div class="col-12 col-md-6 my-3">
+    <div class="col-12 col-md-6 my-3 my-md-0">
       <hr class="m-3">
       <app-big-card
       [id]="data[7].id"
@@ -45,7 +45,7 @@
       [imageHeight]="'300px'" [fontSize]="'2rem'"
       *ngIf="data[7]"></app-big-card>
     </div>
-    <div class="col-12 col-md-6 my-3">
+    <div class="col-12 col-md-6 my-3 my-md-0">
       <hr class="m-3">
       <app-big-card
       [id]="data[8].id"
