@@ -1,5 +1,5 @@
 <app-title></app-title>
-<div class="articles row my-4 mx-5 align-items-stretch" *ngIf="data">
+<div class="articles row my-4 justify-content-center w-100 align-items-stretch mx-0 mx-md-5" *ngIf="data">
   <div class="col-12 col-md-6" *ngIf="data[0]">
     <app-big-card
     [id]="+data[0].id"
@@ -14,15 +14,15 @@
     ></app-big-card>
   </div>
   <div class="col mt-5 mt-md-0">
-    <div class="row gx-3 justify-content-between align-items-stretch">
-      <div class="col-12 col-md-6"  *ngFor="let article of data.slice(1,4); index as index">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-6 my-3"  *ngFor="let article of data.slice(1,4); index as index">
         <app-small-card
         [id]="article.id"
         [imgSource]="article.article_cover"
         [title]="article.title"
         *ngIf="data[index]"></app-small-card>
       </div>
-      <div class="col-12 col-md-6" *ngFor="let article of data.slice(4,7); index as index">
+      <div class="col-12 col-md-6 my-3" *ngFor="let article of data.slice(4,7); index as index">
         <app-small-card
         [id]="data[index].id"
         [imgSource]="article.article_cover"
@@ -31,9 +31,9 @@
       </div>
     </div>
   </div>
-  <div class="row gx-3 mb-4 m-mb-5 align-items-stretch">
+  <div class="row mb-4 mx-0 mx-md-3 w-100">
     <div class="col-12 col-md-6 my-3">
-      <hr class="mb-3 mx-3">
+      <hr class="m-3">
       <app-big-card
       [id]="data[7].id"
       [imgSource]="data[7].article_cover"
@@ -46,7 +46,7 @@
       *ngIf="data[7]"></app-big-card>
     </div>
     <div class="col-12 col-md-6 my-3">
-      <hr class="mb-3 mx-3">
+      <hr class="m-3">
       <app-big-card
       [id]="data[8].id"
       [imgSource]="data[8].article_cover"
