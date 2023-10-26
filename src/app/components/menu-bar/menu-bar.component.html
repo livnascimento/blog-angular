@@ -6,14 +6,11 @@
 
     <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['']">Home</a>
+        <li class="nav-item"  routerLinkActive="active-link">
+          <a class="nav-link" [routerLink]="['/']">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"  routerLinkActive="active-link">
           <a class="nav-link" [routerLink]="['sobre']">Sobre mim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['portfolio']">Portfólio</a>
         </li>
       </ul>
     </div>
