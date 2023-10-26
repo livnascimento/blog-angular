@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { ContentModule } from './pages/content/content.module';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component'
+import { FooterComponent } from './components/footer/footer.component';
 
 import { AboutComponent } from './pages/about/about.component';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 
 
@@ -18,8 +18,8 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    PortfolioComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
