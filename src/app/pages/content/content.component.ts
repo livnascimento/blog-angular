@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import axiosInstance from '../../services/axios-config';
-
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -26,5 +25,4 @@ export class ContentComponent implements OnInit {
       console.error('Erro ao obter dados da API:', error);
     }
   }
-
 }
