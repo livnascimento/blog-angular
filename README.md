@@ -7,7 +7,7 @@
 Esse é o meu primeiro projeto Angular. Ele consome uma API que desenvolvi para armazenar meus artigos (estará disponível publicamente em breve). A ideia de projeto foi prosposta pela [DIO](https://dio.me/) no [Santander Bootcamp 2023](https://web.dio.me/track/bf7abb82-1324-4074-9949-f474a1a911fe?tab=about).
 <br>
 <br>
-######⚠ Por ainda estar em fase de desenvolvimento, tanto o código quanto o README.md devem sofrer alterações em breve.
+###### ⚠ Por ainda estar em fase de desenvolvimento, tanto o código quanto o README.md devem sofrer alterações em breve.
 
 ## Tecnologias utilizadas
 
